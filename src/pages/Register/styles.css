@@ -1,0 +1,97 @@
+.register-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-container .content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 60px 0 60px;
+}
+.register-container section.form {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;  
+  padding: 10px;
+}
+.register-container section.form form input {
+  margin-top: 8px
+}
+.register-container section.form h1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.register-container section.content-logo {
+  width: 100%;
+  text-align: center; 
+  padding: 40px 0 20px 0;
+}
+.register-container section.form form div.input-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+}
+.register-container section.form form .input-group input {
+  border-radius: 4px;
+}
+.register-container section.form form button {
+  margin-top: 8px;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+}
+.register-container section.content-logo {
+  width: 100%;
+}
+.register-container .logo-1 {
+  width: 120px;
+}
+
+@media only screen and (max-width: 720px) {
+  .register-container section.form { 
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+  }
+  .register-container section.form p { 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .register-container section.form p + p { 
+    margin: 0;
+  }
+  .register-container section.content-logo { 
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .register-container .logo-1 { 
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .register-container section.form h1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .register-container .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: stretch;    
+    border: 0;
+    box-shadow: none;
+    padding: 0 30px 0 30px;
+  }
+}

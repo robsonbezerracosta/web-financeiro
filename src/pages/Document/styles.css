@@ -1,0 +1,122 @@
+.document-container {
+  width: 100%;
+  padding: 4px 0 0 4px;
+}
+.document-container .createBy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.document-container .createBy a { 
+  text-decoration: none;
+  text-align: center;
+}
+.document-container .document-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.document-container .document-content p {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #737380;
+}
+
+.document-container .document-content p span{
+  color: #c93586;
+}
+.document-container .document-content form {
+  width: 100%;
+  max-width: 1600px;
+}
+.document-container form button {
+  margin-top: 8px;
+}
+.document-container form button:hover {
+  filter: brightness(90%);
+  transition: 0.5s;
+}
+
+.document-container .document-content form div.input-group {
+  display: flex;
+}
+.document-container .document-content form div.input-group .input-group-dc + .input-group-dc {
+  margin-left: 6px;
+} 
+
+.document-container .content-document {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.document-container .content-document table {
+  width: 100%;
+  background: #373737;
+  border-radius: 4px;
+  box-shadow:0 0 8px 0 #FFF;
+  box-shadow: 0 0 0 1px #333;
+  border: 1px solid #FFF;
+}
+.document-container .content-document table thead tr th {
+  padding: 16px;
+  color: #e2f0ee;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  line-height: normal;
+  background: #373737;
+}
+.document-container .content-document table thead tr + tr th {
+  background: #FFF;
+  padding: 0px;
+  padding-top: 1px;
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.document-container .content-document table tbody tr td {
+  padding: 16px;
+  color: #e6a338;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  line-height: normal;
+}
+.document-container .content-document table tbody tr td svg {
+  cursor: pointer;
+}
+.document-container .content-document table tbody tr td svg + svg{
+  margin-left: 25px;
+}
+.document-container .document-content .header-shipping {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.document-container .document-content .header-shipping  p {
+  border-bottom: 1px solid #373737;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  color: #737380;
+}
+.document-container .document-content .header-shipping  p + p {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #737380;
+  border: 0;
+  padding: 0;
+}
+

@@ -1,0 +1,96 @@
+.logon-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logon-container .content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 60px 0 60px;
+}
+.logon-container section.form {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;  
+  padding: 10px;
+}
+.logon-container section.form form {
+  margin-top: 40px;
+}
+.logon-container section.form form h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 400;
+}
+.logon-container section.form  i {
+  margin-top: 8px;
+  color: #E02041;
+}
+.logon-container section.form input + input {
+  margin-top: 8px;
+}
+
+.logon-container section.form form button {
+  width: 100%;
+  margin-top: 8px;
+  height: 48px;
+  border-radius: 4px;
+}
+.logon-container section.form p {
+  font-size: 16px;
+  color: #737380;
+  line-height: 22px;
+  text-align: center;
+}
+.logon-container section.content-logo {
+  width: 100%;
+  text-align: center; 
+  padding: 40px 0 40px 0;
+}
+.logon-container .logo-1 {
+  width: 120px;
+}
+
+@media only screen and (max-width: 720px) {
+  .logon-container section.form { 
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+  }
+  .logon-container section.form p { 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .logon-container section.form p + p { 
+    margin: 0;
+    line-height: 12px;
+  }
+  .logon-container section.content-logo { 
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .logon-container .logo-1 { 
+    width: 100px;
+  }
+  .logon-container .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: stretch;    
+    border: 0;
+    box-shadow: none;
+    padding: 0 30px 0 30px;
+  }
+}

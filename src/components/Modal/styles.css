@@ -1,0 +1,66 @@
+.document-container .modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.document-container .modal-container .modal {
+  background: #FFF;
+  width: 60%;
+  min-width: 300px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 4px;
+  align-items: center;
+  box-shadow: 0 0 0 1px #333;
+}
+.document-container .modal-container .modal .modal-header {
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow:0 0 8px 0 #333;
+  color: #e2f0ee;
+}
+.document-container .modal-container .modal .modal-content {
+  display: flex;
+  margin-top: 20px;
+}
+.document-container .modal-container .modal .modal-content .input-group-dc + .input-group-dc {
+  margin-left: 6px;
+}
+.document-container .modal-container .modal .modal-form p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: [first] 70px [line2] 300px;
+  grid-gap: 0px;
+  color: #737380;
+}
+.document-container .modal-container .modal .modal-form p span{
+  color: #c93586;
+  margin-left: 10px;
+}
+.document-container .modal-container .modal .modal-form {
+  padding: 20px;
+}
+.document-container .modal-container .modal .modal-form footer {
+  border-radius: 4px;
+  margin-top: 6px;
+  padding: 8px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+}
+.document-container .modal-container .modal .modal-form footer button {
+  margin-top: 0;
+}
+.document-container .modal-container .modal .modal-form footer button + button {
+  margin-left: 6px;
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  color: #333;
+}

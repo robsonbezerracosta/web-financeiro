@@ -1,0 +1,57 @@
+.shipping-container {
+  width: 100%;
+  padding: 4px 0 0 4px;
+}
+
+.shipping-container .shipping-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.shipping-container .shipping-content  span {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #737380;
+}
+.shipping-container .shipping-content form {
+  padding-top: 40px;
+  border-top: 1px solid #373737;
+  width: 100%;
+}
+.shipping-container .shipping-content form footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.shipping-container .shipping-content form input,
+.shipping-container .shipping-content form textarea {
+  margin-top: 8px;
+}
+.shipping-container .shipping-content form div.input-group {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+}
+.shipping-container .shipping-content form .input-group input + input {
+  margin-left: 8px;
+}
+
+.shipping-container .shipping-content form p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: [first] 70px [line2] 300px;
+  grid-gap: 0px;
+  color: #737380;
+}
+.shipping-container .shipping-content form p span{
+  color: #c93586;
+  margin-left: 10px;
+}

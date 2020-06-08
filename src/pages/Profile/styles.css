@@ -1,0 +1,185 @@
+.profile-container { 
+  width: 100%;
+}
+
+.profile-container header {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+  position: fixed;
+  background: #F0F0F5;
+  z-index: 1;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 101px;
+}
+.border-pad {
+  border-radius: 4px;
+}
+.profile-container header span {
+  font-size: 20px;
+  margin-left: 24px;
+}
+
+.profile-container header img {
+  width: 100px;
+}
+
+.profile-container header a {
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.profile-container header button {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  border: 0;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.5s;
+}
+
+.profile-container header button:hover {
+  border-color: 0;
+}
+
+.profile-container .profille-content {
+  padding: 102px 1px 1px 1px;
+}
+
+.profile-container .profille-content .content-list,
+.profile-container .profille-content .content {
+  width: 100%;
+  padding: 24px;
+}
+
+.profile-container .profille-content h2 {
+  margin-top: 20px;
+  margin-bottom: 14px;
+  padding: 10px;
+  color: #e2f0ee;
+  background: #333;
+  border-radius: 4px;
+  font-weight: lighter;
+  box-shadow: 0 0.938em 2.188em rgba(50,50,93,.15), 0 0.313em 0.938em rgba(0,0,0,.1);
+}
+.profile-container .profille-content .grid-content {
+  display: grid;
+  grid-template-columns: [first] 1fr [line2] 1fr [line3] 2fr;
+  grid-gap: 10px;
+}
+.profile-container .profille-content .content ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 24px;
+  list-style: none;
+}
+
+.profile-container .profille-content .content ul li {
+  background: #FFF;
+  padding: 24px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 0.938em 2.188em rgba(50,50,93,.15), 0 0.313em 0.938em rgba(0,0,0,.1);
+  border: 0;
+}
+.profile-container .profille-content .content ul li button {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+
+  height: 35px;
+  width: 35px;
+  border: none;
+  background: transparent;
+  transition: border-color 0.5s;
+  line-height: 40px;
+}
+.profile-container .profille-content .content ul li button + button {
+  top: 62px;
+}
+.profile-container .profille-content .content ul li button + button + button {
+  top: 100px;
+}
+.profile-container .profille-content .content ul li button:hover {
+  opacity: 0.8;
+}
+
+.profile-container .profille-content .content ul li strong {
+  display: block;
+  margin-bottom: 0px;
+  color:#737380;
+  font-weight: 400;
+}
+.profile-container .profille-content .content ul li p + strong {
+  margin-top: 22px;
+}
+.profile-container .profille-content .content ul li i {
+  color: #FF8E53;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4px;
+}
+.profile-container .profille-content .content ul li p {
+  color:  #21CBF3;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-container .profille-content .content-list ul { 
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 24px;
+  list-style: none;
+}
+.profile-container .profille-content .content-list ul li { 
+  background: #FFF;
+  padding: 24px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 0.938em 2.188em rgba(50,50,93,.15), 0 0.313em 0.938em rgba(0,0,0,.1);
+  border: 0;
+}
+.profile-container .profille-content .content-list ul li p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-container .profille-content .content-list ul li p  span {
+  color: rgba(30, 144, 255, 1);
+}
+
+@media only screen and (max-width: 720px) {
+  .profile-container .profille-content {
+    padding: 102px 0px 0px 0px;
+  }
+  .profile-container header button {
+    border: 0;
+  }
+  .profile-container .profille-content .content ul li {
+    border-radius: 4px;
+  }
+  .profile-container .profille-content h1 {
+    background: #FFF;
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    box-shadow:0 0 2px 0 #333;
+  }
+  .profile-container .profille-content .content ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+  }
+}

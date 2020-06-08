@@ -1,0 +1,94 @@
+.document-container .modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.document-container .modal-container .modal {
+  background: #FFF;
+  width: 40%;
+  min-width: 300px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 4px;
+  align-items: center;
+  box-shadow: 0 0 0 1px #333;
+}
+.document-container .modal-container .modal .modal-header {
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow:0 0 8px 0 #333;
+  color: #e2f0ee;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.document-container .modal-container .modal .modal-header button {
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+.document-container .modal-container .modal .modal-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.document-container .modal-container .modal .modal-form p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: [first] 70px [line2] 300px;
+  grid-gap: 0px;
+  color: #737380;
+}
+.document-container .modal-container .modal .modal-form p span{
+  color: #c93586;
+  margin-left: 10px;
+}
+.document-container .modal-container .modal .modal-form {
+  padding: 20px;
+}
+
+.document-container .modal-container .modal .modal-content table {
+  width: 100%;
+}
+
+.document-container .modal-container .modal .modal-content table thead tr th {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  color: #737380;
+}
+
+.document-container .modal-container .modal .modal-content table tbody tr td button  {
+  width: 100%;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  margin: 0;
+  box-shadow: none;
+}
+
+
+.document-container .modal-container .modal .modal-content table tbody tr + tr td {
+  padding: 0 20px;
+  background: #333;
+  border-radius: 3px;
+  color: #e2f0ee;
+}
+
+.document-container .modal-container .modal .modal-content table tbody tr + tr td:last-child {
+  padding: 0;
+}
+
+.document-container .modal-container .modal .modal-content table tbody tr + tr td:last-child button{
+  height: 36px;
+}

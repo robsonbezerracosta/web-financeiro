@@ -1,0 +1,51 @@
+.menu-container {
+  display: flex;
+  width: 100%;
+}
+.menu-container  .button {
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  color: #737380;
+}
+.content-button  .button ,
+.menu-container  .button + .button {
+  margin-left: 4px;
+}
+.content-button  .button {
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+  color: #FFF;
+}
+
+.menu-container  .menu p {
+  font-size: 16px;
+  color: #737380;
+  margin-left: 10px;
+}
+
+
+.menu-container a { 
+  background: #FFF;
+  margin-top: 0;
+  color: #737380;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 4px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 720px) { 
+  .menu-container  .menu {
+    width: 100%;
+    max-width: 100%;
+    justify-content: start;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    border-radius: 0;
+    background-color: #000;
+  }
+}
