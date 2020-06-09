@@ -275,28 +275,37 @@ export default function Administrator() {
                   <FiSettings size={22} color="#FE6B8B"/>
                 </div>
               </div>
-              <p><span>Credor</span>{document.creditorsAss.razao}</p>
+
+              <p className="creditor"><span>Credor</span>{document.creditorsAss.razao}</p>
               <p><span>Númenro</span>{document.number_doc}</p>
               <p><span>Emissão</span>{document.emission}</p>
               <p><span>Valor R$</span>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(document.value_doc)}</p>
-              <span className="impostos">
-                <p>Cód</p>
-                <p>%</p>
-                <p>Calc</p>
-                <p>Val R$</p>
-                <p>#</p>
-              </span>
-              {
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Cód</th>
+                    <th>%</th>
+                    <th>Calc</th>
+                    <th>Val R$</th>
+                    <th>#</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {
                 document.listRetention.map(taxes => (
-                  <span className="impostos-data" key={taxes.id}>
-                    <p>{taxes.code}</p>
-                    <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(taxes.percentage)}</p>
-                    <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(taxes.retention_document.calculation)}</p>
-                    <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format((taxes.percentage/100)*taxes.retention_document.calculation)}</p>
-                    <p><FiXCircle size={18} color="#FE6B8B" onClick={() => deleteRetntion(taxes.retention_document.document_id, taxes)}/></p>
-                  </span>
+                  <tr key={taxes.id}>
+                    <td>{taxes.code}</td>
+                    <td>{Intl.NumberFormat('pt-BR', {   minimumFractionDigits: 2, maximumFractionDigits: 2, style: 'percent'}).format(taxes.percentage/100)}</td>
+                    <td>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(taxes.retention_document.calculation)}</td>
+                    <td>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(document.value_doc - (taxes.percentage/100)*taxes.retention_document.calculation)}</td>
+                    <td><FiXCircle size={18} color="#FE6B8B" onClick={() => deleteRetntion(taxes.retention_document.document_id, taxes)}/></td>
+                  </tr>
                 ))
               }
+                </tbody>
+              </table>
+
               <div className="documents-siafi">
 
                 <div>{document.listCommitment.map(commitment => (
